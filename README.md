@@ -256,6 +256,7 @@ Session restored from your saved work on 2024-May-18 03:47:54 UTC (2 days ago)
 
 ![file_show (3)](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/2cbc91c6-73cb-4ea3-9291-e9cababb6f33)
 
+![file_show (4)](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/4529b819-e6ad-4a83-9a36-5dd43848c2ca)
 
 
 Act
