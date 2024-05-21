@@ -188,7 +188,66 @@ ggplot(fitbit_data, aes(x = ActivityDate, y = TotalSteps, group = Id, color = Id
 ggplot(fitbit_data, aes(x = TotalSteps, y = Calories, color = Id)) +
   geom_point() +
   labs(title = "Steps vs. Calories", x = "Total Steps", y = "Calories Burned") +
-  theme_minimal() ```
+  theme_minimal()
+
+
+Rows: 457 Columns: 15                                                                   
+── Column specification ────────────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (1): ActivityDate
+dbl (14): Id, TotalSteps, TotalDistance, TrackerDistance, LoggedActivitiesDistance, ...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+Rows: 940 Columns: 15                                                                   
+── Column specification ────────────────────────────────────────────────────────────────
+Delimiter: ","
+chr  (1): ActivityDate
+dbl (14): Id, TotalSteps, TotalDistance, TrackerDistance, LoggedActivitiesDistance, ...
+
+ℹ Use `spec()` to retrieve the full column specification for this data.
+ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
+spc_tbl_ [1,397 × 15] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
+ $ Id                      : num [1:1397] 1.5e+09 1.5e+09 1.5e+09 1.5e+09 1.5e+09 ...
+ $ ActivityDate            : chr [1:1397] "3/25/2016" "3/26/2016" "3/27/2016" "3/28/2016" ...
+ $ TotalSteps              : num [1:1397] 11004 17609 12736 13231 12041 ...
+ $ TotalDistance           : num [1:1397] 7.11 11.55 8.53 8.93 7.85 ...
+ $ TrackerDistance         : num [1:1397] 7.11 11.55 8.53 8.93 7.85 ...
+ $ LoggedActivitiesDistance: num [1:1397] 0 0 0 0 0 0 0 0 0 0 ...
+ $ VeryActiveDistance      : num [1:1397] 2.57 6.92 4.66 3.19 2.16 ...
+ $ ModeratelyActiveDistance: num [1:1397] 0.46 0.73 0.16 0.79 1.09 ...
+ $ LightActiveDistance     : num [1:1397] 4.07 3.91 3.71 4.95 4.61 ...
+ $ SedentaryActiveDistance : num [1:1397] 0 0 0 0 0 0 0 0 0 0 ...
+ $ VeryActiveMinutes       : num [1:1397] 33 89 56 39 28 30 33 47 40 15 ...
+ $ FairlyActiveMinutes     : num [1:1397] 12 17 5 20 28 13 12 21 11 30 ...
+ $ LightlyActiveMinutes    : num [1:1397] 205 274 268 224 243 223 239 200 244 314 ...
+ $ SedentaryMinutes        : num [1:1397] 804 588 605 1080 763 ...
+ $ Calories                : num [1:1397] 1819 2154 1944 1932 1886 ...
+ - attr(*, "spec")=
+  .. cols(
+  ..   Id = col_double(),
+  ..   ActivityDate = col_character(),
+  ..   TotalSteps = col_double()[39m,
+  ..   TotalDistance = col_double(),
+  ..   TrackerDistance = col_double(),
+  ..   LoggedActivitiesDistance = col_double(),
+  ..   VeryActiveDistance = col_double(),
+  ..   ModeratelyActiveDistance = col_double(),
+  ..   LightActiveDistance = col_double(),
+  ..   SedentaryActiveDistance = col_double(),
+  ..   VeryActiveMinutes = col_double(),
+  ..   FairlyActiveMinutes = col_double(),
+  ..   LightlyActiveMinutes = col_double(),
+  ..   SedentaryMinutes = col_double(),
+  ..   Calories = col_double()
+  .. )
+ - attr(*, "problems")=<externalptr> 
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Saving 7 x 7 in image
+Session restored from your saved work on 2024-May-18 03:47:54 UTC (2 days ago)
+> 
 
 Act
 Recommendations
