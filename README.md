@@ -2,7 +2,8 @@
 
 
 
-![Run for Fitness](Run-for-Fitness-SheThePeople1.jpg)
+![Run-for-Fitness-SheThePeople1](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/0c79d73d-e0b5-4439-b7d7-a956fd3104c4)
+
 
 ## Introduction
 Welcome to the Bellabeat Data Analysis Case Study! In this project, I step into the role of a junior data analyst on the marketing analytics team at Bellabeat, a pioneering company in the realm of health-focused smart devices for women. This journey involves engaging in real-world tasks, interacting with various team members, and ultimately developing a portfolio-ready case study showcasing my skills and insights.
@@ -248,6 +249,13 @@ Saving 7 x 7 in image
 Saving 7 x 7 in image
 Session restored from your saved work on 2024-May-18 03:47:54 UTC (2 days ago)
 > 
+
+
+
+
+
+
+
 
 Act
 Recommendations
