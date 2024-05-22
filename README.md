@@ -173,25 +173,46 @@ write.csv(fitbit_data, "cleaned_fitbit_data.csv", row.names = FALSE)
 summary_stats <- summary(fitbit_data)
 write.csv(summary_stats, "summary_statistics.csv")
 
-# Visualization 1: Bar Chart - Average Steps by User
-ggplot(fitbit_data, aes(x = Id, y = TotalSteps)) +
-  geom_bar(stat = "identity", fill = "skyblue") +
-  labs(title = "Average Steps by User", x = "User ID", y = "Total Steps") +
-  theme_minimal()
-
-# Visualization 2: Line Chart - Daily Activity Over Time
-ggplot(fitbit_data, aes(x = ActivityDate, y = TotalSteps, group = Id, color = Id)) +
-  geom_line() +
-  labs(title = "Daily Activity Over Time", x = "Date", y = "Total Steps") +
-  theme_minimal()
-
-# Visualization 3: Scatter Plot - Steps vs. Calories
-ggplot(fitbit_data, aes(x = TotalSteps, y = Calories, color = Id)) +
-  geom_point() +
-  labs(title = "Steps vs. Calories", x = "Total Steps", y = "Calories Burned") +
-  theme_minimal()
-
-# Visualization 4: Histogram - Distribution of Daily Steps
+ # Visualization 1: Bar Chart - Average Steps by User
+  avg_steps_by_user <- fitbit_data %>%
+    group_by(Id) %>%
+    summarise(Avg_Steps = mean(TotalSteps))
+  
+  ggplot(avg_steps_by_user, aes(x = Id, y = Avg_Steps, fill = Id)) +
+    geom_bar(stat = "identity") +
+    labs(title = "Average Steps by User",
+         x = "User ID",
+         y = "Average Steps") +
+    theme_minimal() +
+    theme(axis.text.x = element_blank())
+  
+  ggsave("average_steps_by_user.png")
+  
+  # Visualization 2: Line Chart - Trends in Activity Over Time
+  activity_trends <- fitbit_data %>%
+    group_by(ActivityDate) %>%
+    summarise(Avg_Steps = mean(TotalSteps))
+  
+  ggplot(activity_trends, aes(x = ActivityDate, y = Avg_Steps)) +
+    geom_line(color = "blue") +
+    labs(title = "Trends in Activity Over Time",
+         x = "Date",
+         y = "Average Steps") +
+    theme_minimal()
+  
+  ggsave("trends_in_activity_over_time.png")
+  
+  # Visualization 3: Scatter Plot - Steps vs. Sedentary Minutes
+  ggplot(fitbit_data, aes(x = TotalSteps, y = SedentaryMinutes)) +
+    geom_point(alpha = 0.6) +
+    labs(title = "Relationship Between Steps and Sedentary Minutes",
+         x = "Total Steps",
+         y = "Sedentary Minutes") +
+    theme_minimal()
+  
+  ggsave("steps_vs_sedentary_minutes.png")
+  
+  # Visualization 4: Histogram - Distribution of Daily Steps
   ggplot(fitbit_data, aes(x = TotalSteps)) +
     geom_histogram(binwidth = 1000, fill = "blue", color = "black", alpha = 0.7) +
     labs(title = "Distribution of Daily Steps",
@@ -272,13 +293,13 @@ Saving 7 x 7 in image
 Session restored from your saved work on 2024-May-18 03:47:54 UTC (2 days ago)
 > 
 
-![file_show (1)](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/c99a9386-61e8-489a-b864-3f26ec8e2383)
+![distribution_of_daily_steps.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/c99a9386-61e8-489a-b864-3f26ec8e2383)
 
-![file_show (2)](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/57a45fbc-548f-436f-b5df-285cf8ef67fb)
+![steps_vs_sedentary_minutes.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/57a45fbc-548f-436f-b5df-285cf8ef67fb)
 
-![file_show (3)](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/2cbc91c6-73cb-4ea3-9291-e9cababb6f33)
+![trends_in_activity_over_time.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/2cbc91c6-73cb-4ea3-9291-e9cababb6f33)
 
-![file_show (4)](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/4529b819-e6ad-4a83-9a36-5dd43848c2ca)
+![steps_vs_sedentary_minutes.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/4529b819-e6ad-4a83-9a36-5dd43848c2ca)
 
 ![average_steps_by_user.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/b7b1764b-2e4f-4e86-a571-9550c122e40e)
 
