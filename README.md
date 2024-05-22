@@ -191,6 +191,20 @@ ggplot(fitbit_data, aes(x = TotalSteps, y = Calories, color = Id)) +
   labs(title = "Steps vs. Calories", x = "Total Steps", y = "Calories Burned") +
   theme_minimal()
 
+# Visualization 4: Histogram - Distribution of Daily Steps
+  ggplot(fitbit_data, aes(x = TotalSteps)) +
+    geom_histogram(binwidth = 1000, fill = "blue", color = "black", alpha = 0.7) +
+    labs(title = "Distribution of Daily Steps",
+         x = "Total Steps",
+         y = "Frequency") +
+    theme_minimal()
+  
+  ggsave("distribution_of_daily_steps.png")
+} else {
+  print("Error: One or both of the files do not exist. Please check the file paths.")
+}
+
+
 
 Rows: 457 Columns: 15                                                                   
 ── Column specification ────────────────────────────────────────────────────────────────
@@ -242,6 +256,14 @@ spc_tbl_ [1,397 × 15] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
   ..   SedentaryMinutes = col_double(),
   ..   Calories = col_double()
   .. )
+"","      Id"," ActivityDate","  TotalSteps","TotalDistance","TrackerDistance","LoggedActivitiesDistance","VeryActiveDistance","ModeratelyActiveDistance","LightActiveDistance","SedentaryActiveDistance","VeryActiveMinutes","FairlyActiveMinutes","LightlyActiveMinutes","SedentaryMinutes","   Calories"
+"","Min.   :1.504e+09  ","Min.   :2016-03-12  ","Min.   :    0  ","Min.   : 0.000  ","Min.   : 0.000  ","Min.   :0.0000  ","Min.   : 0.000  ","Min.   :0.0000  ","Min.   : 0.000  ","Min.   :0.000000  ","Min.   :  0.00  ","Min.   :  0.0  ","Min.   :  0.0  ","Min.   :   0.0  ","Min.   :   0  "
+"","1st Qu.:2.320e+09  ","1st Qu.:2016-04-09  ","1st Qu.: 3146  ","1st Qu.: 2.170  ","1st Qu.: 2.160  ","1st Qu.:0.0000  ","1st Qu.: 0.000  ","1st Qu.:0.0000  ","1st Qu.: 1.610  ","1st Qu.:0.000000  ","1st Qu.:  0.00  ","1st Qu.:  0.0  ","1st Qu.:111.0  ","1st Qu.: 729.0  ","1st Qu.:1799  "
+"","Median :4.445e+09  ","Median :2016-04-19  ","Median : 6999  ","Median : 4.950  ","Median : 4.950  ","Median :0.0000  ","Median : 0.100  ","Median :0.2000  ","Median : 3.240  ","Median :0.000000  ","Median :  2.00  ","Median :  6.0  ","Median :195.0  ","Median :1057.0  ","Median :2114  "
+"","Mean   :4.781e+09  ","Mean   :2016-04-19  ","Mean   : 7281  ","Mean   : 5.219  ","Mean   : 5.192  ","Mean   :0.1315  ","Mean   : 1.397  ","Mean   :0.5385  ","Mean   : 3.193  ","Mean   :0.001704  ","Mean   : 19.68  ","Mean   : 13.4  ","Mean   :185.4  ","Mean   : 992.5  ","Mean   :2266  "
+"","3rd Qu.:6.962e+09  ","3rd Qu.:2016-04-30  ","3rd Qu.:10544  ","3rd Qu.: 7.500  ","3rd Qu.: 7.480  ","3rd Qu.:0.0000  ","3rd Qu.: 1.830  ","3rd Qu.:0.7700  ","3rd Qu.: 4.690  ","3rd Qu.:0.000000  ","3rd Qu.: 30.00  ","3rd Qu.: 18.0  ","3rd Qu.:262.0  ","3rd Qu.:1244.0  ","3rd Qu.:2770  "
+"","Max.   :8.878e+09  ","Max.   :2016-05-12  ","Max.   :36019  ","Max.   :28.030  ","Max.   :28.030  ","Max.   :6.7271  ","Max.   :21.920  ","Max.   :6.4800  ","Max.   :12.510  ","Max.   :0.110000  ","Max.   :210.00  ","Max.   :660.0  ","Max.   :720.0  ","Max.   :1440.0  ","Max.   :4900  "
+
  - attr(*, "problems")=<externalptr> 
 Saving 7 x 7 in image
 Saving 7 x 7 in image
@@ -258,24 +280,194 @@ Session restored from your saved work on 2024-May-18 03:47:54 UTC (2 days ago)
 
 ![file_show (4)](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/4529b819-e6ad-4a83-9a36-5dd43848c2ca)
 
-![file_show](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/b7b1764b-2e4f-4e86-a571-9550c122e40e)
+![average_steps_by_user.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/b7b1764b-2e4f-4e86-a571-9550c122e40e)
 
 Act
+Comprehensive Analysis and Insights from Fitbit Data and Visualizations
+
+General Information
+Number of Records (Id): The Id range from 1.504e+09 to 8.878e+09, indicating a large number of unique users.
+Activity Date: Data ranges from March 12, 2016, to May 12, 2016.
+Data Summary
+Steps and Distance
+Total Steps:
+
+Min: 0 steps
+1st Quartile: 3,146 steps
+Median: 6,999 steps
+Mean: 7,281 steps
+3rd Quartile: 10,544 steps
+Max: 36,019 steps
+Total Distance (in miles):
+
+Min: 0.000 miles
+1st Quartile: 2.170 miles
+Median: 4.950 miles
+Mean: 5.219 miles
+3rd Quartile: 7.500 miles
+Max: 28.030 miles
+Tracker Distance: Values closely match Total Distance.
+
+Min: 0.000 miles
+Max: 28.030 miles
+Logged Activities Distance:
+
+Min: 0.000 miles
+Max: 28.030 miles
+Activity Levels
+Very Active Distance:
+
+Min: 0.0000 miles
+Max: 6.7271 miles
+Mean: 0.1315 miles
+Moderately Active Distance:
+
+Min: 0.000 miles
+Max: 21.920 miles
+Mean: 1.397 miles
+Light Active Distance:
+
+Min: 0.0000 miles
+Max: 6.4800 miles
+Mean: 0.5385 miles
+Sedentary Active Distance:
+
+Min: 0.000 miles
+Max: 12.510 miles
+Mean: 3.193 miles
+Minutes Spent in Activity
+Very Active Minutes:
+
+Min: 0 minutes
+Max: 210 minutes
+Mean: 19.68 minutes
+Fairly Active Minutes:
+
+Min: 0 minutes
+Max: 660 minutes
+Mean: 13.4 minutes
+Lightly Active Minutes:
+
+Min: 0 minutes
+Max: 720 minutes
+Mean: 185.4 minutes
+Sedentary Minutes:
+
+Min: 0 minutes
+Max: 1440 minutes
+Mean: 992.5 minutes
+Calories Burned
+Calories:
+
+Min: 0 calories
+1st Quartile: 1,799 calories
+Median: 2,114 calories
+Mean: 2,266 calories
+3rd Quartile: 2,770 calories
+Max: 4,900 calories
+Visualization Analysis
+
+Average Steps by User
+File: average_steps_by_user.png
+
+Analysis:
+Heatmap showing average steps taken by each user.
+Darker shades indicate higher average steps, while lighter shades indicate lower averages.
+Users with the highest average steps are clustered towards the right side of the heatmap.
+Trends in Activity Over Time
+File: trends_in_activity_over_time.png
+
+Analysis:
+Line graph tracking activity levels (steps) over time.
+General upward trend from mid-March to late April, indicating an increase in activity.
+Fluctuations suggest variations in daily or weekly activity patterns.
+Sharp drop at the end needs further investigation to determine if it's an anomaly or a trend.
+Steps vs. Sedentary Minutes
+File: steps_vs_sedentary_minutes.png
+
+Analysis:
+Scatter plot exploring the relationship between total steps and sedentary minutes.
+Weak negative correlation observed; as steps increase, sedentary minutes tend to decrease.
+Some users exhibit high sedentary minutes despite taking a moderate number of steps.
+Distribution of Daily Steps
+File: distribution_of_daily_steps.png
+
+Analysis:
+Histogram showing the distribution of daily steps across all users.
+Right-skewed distribution, with most users taking fewer steps daily.
+Peak around 5,000 steps, indicating that many users achieve this number daily.
+Outliers with exceptionally high step counts indicate a small number of highly active users.
+Interpretation
+Activity Levels:
+
+Wide range in daily steps, distance traveled, and calories burned.
+Median values indicate moderate activity levels (Median Total Steps: 6,999).
+High mean values for Lightly Active Minutes and Sedentary Minutes show significant light and sedentary activity.
+Variability:
+
+Significant variance between minimum and maximum values in Very Active Minutes and Fairly Active Minutes.
+Indicates some users are very active, while others are not active at all.
 Recommendations
-Based on the analysis, I will present actionable recommendations to Bellabeat's executive team, focusing on marketing strategies that leverage the insights gained from the data. These recommendations aim to enhance user engagement, improve product features, and ultimately drive business growth.
+Target Low-Activity Users:
 
-Key Tasks
-Present Insights: I'll present the key findings and insights to the Bellabeat executive team, highlighting trends and patterns that are relevant to the business.
-Develop Recommendations: I'll develop actionable recommendations based on the analysis, focusing on how Bellabeat can leverage the insights to improve its marketing strategy and product offerings.
-Plan Implementation: I'll work with the team to develop a plan for implementing the recommendations, including timelines, resources, and key milestones.
-Deliverable
-A set of actionable recommendations and a detailed implementation plan.
+Develop personalized interventions to motivate and support users with low average steps.
+Use insights from the heatmap to identify and engage these users.
+Promote Consistency:
 
+Encourage users to maintain consistent activity levels.
+Address fluctuations observed in activity levels over time.
+Reduce Sedentary Time:
+
+Implement strategies to reduce prolonged sedentary periods.
+Focus on users who take moderate steps but have high sedentary minutes.
+Encourage Moderate Activity:
+
+Shift the step distribution towards a higher average.
+Set achievable daily step goals and provide incentives.
+Plan Implementation
+User Interface Enhancements:
+
+Simplify goal setting and tracking within the app.
+Provide real-time feedback on activity progress.
+Data-Driven Insights:
+
+Generate weekly and monthly activity reports.
+Develop customizable alerts for users to remind them to stay active.
+Community and Support:
+
+Encourage users to join groups or challenges.
+Offer access to fitness experts for personalized advice.
+Deliverables
+Enhanced App Features:
+
+Goal-setting and tracking enhancements.
+Real-time activity alerts.
+Detailed activity reports.
+User Education:
+
+Guides on effective activity logging.
+Nutritional advice linked with caloric expenditure.
+Community Engagement:
+
+Launch community challenges and group activities.
+Provide expert consultations.
 Next Steps
-Once the recommendations are approved, the team will move forward with implementing the changes and monitoring their impact on business performance.
+Data Validation:
 
-Conclusion
-The Bellabeat Data Analysis Case Study showcases the power of data analysis in driving business decisions and enhancing marketing strategies. By leveraging real-world data and analytical techniques, I have provided valuable insights and recommendations that can help Bellabeat achieve its growth objectives and continue to lead the wellness tech market.
+Ensure accuracy and completeness of activity data.
+Address any discrepancies or gaps in the data.
+User Feedback:
+
+Gather feedback on current app features and desired improvements.
+Conduct surveys or focus groups to understand user needs.
+Feature Development:
+
+Prioritize development based on user feedback and data analysis.
+Test new features with a beta group before a full rollout.
+
+Final Conclusion
+The analysis of Fitbit data and visualizations reveals that while users are moderately active, there is significant room for improvement in their very active minutes and overall activity levels. By implementing enhanced goal-setting features, personalized recommendations, and fostering community engagement, Bellabeat can help users achieve better health outcomes. Continuous monitoring and feedback will ensure these initiatives are effective and well-received by users.
+
 
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
