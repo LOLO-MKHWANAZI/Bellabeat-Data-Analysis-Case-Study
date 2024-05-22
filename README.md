@@ -134,7 +134,9 @@ Create various plots to understand the activity trends, relationships, and distr
 Save the cleaned data and summary statistics to CSV files.
 
 Here is a detailed plan:
-```r
+
+```R
+
 # Install necessary packages if not already installed
 if (!requireNamespace("ggplot2", quietly = TRUE)) {
   install.packages("ggplot2")
@@ -335,7 +337,7 @@ Saving 7 x 7 in image
 Saving 7 x 7 in image
 Session restored from your saved work on 2024-May-18 03:47:54 UTC (2 days ago)
 > 
-
+```
 
 
 ![distribution_of_daily_steps.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/c99a9386-61e8-489a-b864-3f26ec8e2383)
