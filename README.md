@@ -204,15 +204,22 @@ Saving 7 x 7 in image
 Session restored from your saved work on 2024-May-18 03:47:54 UTC (2 days ago)
 > 
 
+
+
 ![distribution_of_daily_steps.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/c99a9386-61e8-489a-b864-3f26ec8e2383)
+
 
 ![steps_vs_sedentary_minutes.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/57a45fbc-548f-436f-b5df-285cf8ef67fb)
 
+
 ![trends_in_activity_over_time.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/2cbc91c6-73cb-4ea3-9291-e9cababb6f33)
+
 
 ![steps_vs_sedentary_minutes.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/4529b819-e6ad-4a83-9a36-5dd43848c2ca)
 
+
 ![average_steps_by_user.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/b7b1764b-2e4f-4e86-a571-9550c122e40e)
+
 
 Act
 Comprehensive Analysis and Insights from Fitbit Data and Visualizations
