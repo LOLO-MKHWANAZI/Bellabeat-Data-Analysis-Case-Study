@@ -545,6 +545,7 @@ The analysis of Fitbit data and visualizations reveals that while users are mode
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+
 ### Acknowledgments
 I would like to express my gratitude to Bellabeat for providing the opportunity to work on this case study. Additionally, I am thankful to the Kaggle community for making the FitBit dataset publicly available, which was instrumental in this analysis. Furthermore, special thanks are owed to the respondents who participated in the survey via Amazon Mechanical Turk between 03.12.2016-05.12.2016, as their contributions formed the basis of the dataset used in this study.
 
