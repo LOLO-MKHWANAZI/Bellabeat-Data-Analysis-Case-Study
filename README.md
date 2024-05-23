@@ -443,14 +443,14 @@ Session restored from your saved work on 2024-May-18 03:47:54 UTC (2 days ago)
 ### Visualization Analysis
 
 #### Average Steps by User
-![Average Steps by User](average_steps_by_user.png)  
+![Average Steps by User](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/b7b1764b-2e4f-4e86-a571-9550c122e40e)  
 **Analysis:**  
 Heatmap showing average steps taken by each user.  
 Darker shades indicate higher average steps, while lighter shades indicate lower averages.  
 Users with the highest average steps are clustered towards the right side of the heatmap.
 
 #### Trends in Activity Over Time
-![Trends in Activity Over Time](trends_in_activity_over_time.png)  
+![Trends in Activity Over Time](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/2cbc91c6-73cb-4ea3-9291-e9cababb6f33)  
 **Analysis:**  
 Line graph tracking activity levels (steps) over time.  
 General upward trend from mid-March to late April, indicating an increase in activity.  
@@ -458,14 +458,14 @@ Fluctuations suggest variations in daily or weekly activity patterns.
 Sharp drop at the end needs further investigation to determine if it's an anomaly or a trend.
 
 #### Steps vs. Sedentary Minutes
-![Steps vs. Sedentary Minutes](steps_vs_sedentary_minutes.png)  
+![Steps vs. Sedentary Minutes](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/4529b819-e6ad-4a83-9a36-5dd43848c2ca)  
 **Analysis:**  
 Scatter plot exploring the relationship between total steps and sedentary minutes.  
 Weak negative correlation observed; as steps increase, sedentary minutes tend to decrease.  
 Some users exhibit high sedentary minutes despite taking a moderate number of steps.
 
 #### Distribution of Daily Steps
-![Distribution of Daily Steps](distribution_of_daily_steps.png)  
+![Distribution of Daily Steps](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/c99a9386-61e8-489a-b864-3f26ec8e2383)  
 **Analysis:**  
 Histogram showing the distribution of daily steps across all users.  
 Right-skewed distribution, with most users taking fewer steps daily.  
