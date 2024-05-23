@@ -355,198 +355,196 @@ Session restored from your saved work on 2024-May-18 03:47:54 UTC (2 days ago)
 ![average_steps_by_user.png](https://github.com/LOLO-MKHWANAZI/Bellabeat-Data-Analysis-Case-Study/assets/163551783/b7b1764b-2e4f-4e86-a571-9550c122e40e)
 
 
-Act
-Comprehensive Analysis and Insights from Fitbit Data and Visualizations
+## Act
 
-General Information
-Number of Records (Id): The Id range from 1.504e+09 to 8.878e+09, indicating a large number of unique users.
-Activity Date: Data ranges from March 12, 2016, to May 12, 2016.
-Data Summary
-Steps and Distance
-Total Steps:
+### Comprehensive Analysis and Insights from Fitbit Data and Visualizations
 
-Min: 0 steps
-1st Quartile: 3,146 steps
-Median: 6,999 steps
-Mean: 7,281 steps
-3rd Quartile: 10,544 steps
-Max: 36,019 steps
-Total Distance (in miles):
+### General Information
+**Number of Records (Id):** The Id range from 1.504e+09 to 8.878e+09, indicating a large number of unique users.  
+**Activity Date:** Data ranges from March 12, 2016, to May 12, 2016.
 
-Min: 0.000 miles
-1st Quartile: 2.170 miles
-Median: 4.950 miles
-Mean: 5.219 miles
-3rd Quartile: 7.500 miles
-Max: 28.030 miles
-Tracker Distance: Values closely match Total Distance.
+### Data Summary
+#### Steps and Distance
+**Total Steps:**
+- Min: 0 steps
+- 1st Quartile: 3,146 steps
+- Median: 6,999 steps
+- Mean: 7,281 steps
+- 3rd Quartile: 10,544 steps
+- Max: 36,019 steps
 
-Min: 0.000 miles
-Max: 28.030 miles
-Logged Activities Distance:
+**Total Distance (in miles):**
+- Min: 0.000 miles
+- 1st Quartile: 2.170 miles
+- Median: 4.950 miles
+- Mean: 5.219 miles
+- 3rd Quartile: 7.500 miles
+- Max: 28.030 miles
 
-Min: 0.000 miles
-Max: 28.030 miles
-Activity Levels
-Very Active Distance:
+**Tracker Distance:**
+- Min: 0.000 miles
+- Max: 28.030 miles
 
-Min: 0.0000 miles
-Max: 6.7271 miles
-Mean: 0.1315 miles
-Moderately Active Distance:
+**Logged Activities Distance:**
+- Min: 0.000 miles
+- Max: 28.030 miles
 
-Min: 0.000 miles
-Max: 21.920 miles
-Mean: 1.397 miles
-Light Active Distance:
+#### Activity Levels
+**Very Active Distance:**
+- Min: 0.0000 miles
+- Max: 6.7271 miles
+- Mean: 0.1315 miles
 
-Min: 0.0000 miles
-Max: 6.4800 miles
-Mean: 0.5385 miles
-Sedentary Active Distance:
+**Moderately Active Distance:**
+- Min: 0.000 miles
+- Max: 21.920 miles
+- Mean: 1.397 miles
 
-Min: 0.000 miles
-Max: 12.510 miles
-Mean: 3.193 miles
-Minutes Spent in Activity
-Very Active Minutes:
+**Light Active Distance:**
+- Min: 0.0000 miles
+- Max: 6.4800 miles
+- Mean: 0.5385 miles
 
-Min: 0 minutes
-Max: 210 minutes
-Mean: 19.68 minutes
-Fairly Active Minutes:
+**Sedentary Active Distance:**
+- Min: 0.000 miles
+- Max: 12.510 miles
+- Mean: 3.193 miles
 
-Min: 0 minutes
-Max: 660 minutes
-Mean: 13.4 minutes
-Lightly Active Minutes:
+#### Minutes Spent in Activity
+**Very Active Minutes:**
+- Min: 0 minutes
+- Max: 210 minutes
+- Mean: 19.68 minutes
 
-Min: 0 minutes
-Max: 720 minutes
-Mean: 185.4 minutes
-Sedentary Minutes:
+**Fairly Active Minutes:**
+- Min: 0 minutes
+- Max: 660 minutes
+- Mean: 13.4 minutes
 
-Min: 0 minutes
-Max: 1440 minutes
-Mean: 992.5 minutes
-Calories Burned
-Calories:
+**Lightly Active Minutes:**
+- Min: 0 minutes
+- Max: 720 minutes
+- Mean: 185.4 minutes
 
-Min: 0 calories
-1st Quartile: 1,799 calories
-Median: 2,114 calories
-Mean: 2,266 calories
-3rd Quartile: 2,770 calories
-Max: 4,900 calories
-Visualization Analysis
+**Sedentary Minutes:**
+- Min: 0 minutes
+- Max: 1440 minutes
+- Mean: 992.5 minutes
 
-Average Steps by User
-File: average_steps_by_user.png
+#### Calories Burned
+**Calories:**
+- Min: 0 calories
+- 1st Quartile: 1,799 calories
+- Median: 2,114 calories
+- Mean: 2,266 calories
+- 3rd Quartile: 2,770 calories
+- Max: 4,900 calories
 
-Analysis:
-Heatmap showing average steps taken by each user.
-Darker shades indicate higher average steps, while lighter shades indicate lower averages.
+### Visualization Analysis
+
+#### Average Steps by User
+![Average Steps by User](average_steps_by_user.png)  
+**Analysis:**  
+Heatmap showing average steps taken by each user.  
+Darker shades indicate higher average steps, while lighter shades indicate lower averages.  
 Users with the highest average steps are clustered towards the right side of the heatmap.
-Trends in Activity Over Time
-File: trends_in_activity_over_time.png
 
-Analysis:
-Line graph tracking activity levels (steps) over time.
-General upward trend from mid-March to late April, indicating an increase in activity.
-Fluctuations suggest variations in daily or weekly activity patterns.
+#### Trends in Activity Over Time
+![Trends in Activity Over Time](trends_in_activity_over_time.png)  
+**Analysis:**  
+Line graph tracking activity levels (steps) over time.  
+General upward trend from mid-March to late April, indicating an increase in activity.  
+Fluctuations suggest variations in daily or weekly activity patterns.  
 Sharp drop at the end needs further investigation to determine if it's an anomaly or a trend.
-Steps vs. Sedentary Minutes
-File: steps_vs_sedentary_minutes.png
 
-Analysis:
-Scatter plot exploring the relationship between total steps and sedentary minutes.
-Weak negative correlation observed; as steps increase, sedentary minutes tend to decrease.
+#### Steps vs. Sedentary Minutes
+![Steps vs. Sedentary Minutes](steps_vs_sedentary_minutes.png)  
+**Analysis:**  
+Scatter plot exploring the relationship between total steps and sedentary minutes.  
+Weak negative correlation observed; as steps increase, sedentary minutes tend to decrease.  
 Some users exhibit high sedentary minutes despite taking a moderate number of steps.
-Distribution of Daily Steps
-File: distribution_of_daily_steps.png
 
-Analysis:
-Histogram showing the distribution of daily steps across all users.
-Right-skewed distribution, with most users taking fewer steps daily.
-Peak around 5,000 steps, indicating that many users achieve this number daily.
+#### Distribution of Daily Steps
+![Distribution of Daily Steps](distribution_of_daily_steps.png)  
+**Analysis:**  
+Histogram showing the distribution of daily steps across all users.  
+Right-skewed distribution, with most users taking fewer steps daily.  
+Peak around 5,000 steps, indicating that many users achieve this number daily.  
 Outliers with exceptionally high step counts indicate a small number of highly active users.
-Interpretation
-Activity Levels:
 
-Wide range in daily steps, distance traveled, and calories burned.
-Median values indicate moderate activity levels (Median Total Steps: 6,999).
+### Interpretation
+**Activity Levels:**  
+Wide range in daily steps, distance traveled, and calories burned.  
+Median values indicate moderate activity levels (Median Total Steps: 6,999).  
 High mean values for Lightly Active Minutes and Sedentary Minutes show significant light and sedentary activity.
-Variability:
 
-Significant variance between minimum and maximum values in Very Active Minutes and Fairly Active Minutes.
+**Variability:**  
+Significant variance between minimum and maximum values in Very Active Minutes and Fairly Active Minutes.  
 Indicates some users are very active, while others are not active at all.
-Recommendations
-Target Low-Activity Users:
 
-Develop personalized interventions to motivate and support users with low average steps.
+### Recommendations
+**Target Low-Activity Users:**  
+Develop personalized interventions to motivate and support users with low average steps.  
 Use insights from the heatmap to identify and engage these users.
-Promote Consistency:
 
-Encourage users to maintain consistent activity levels.
+**Promote Consistency:**  
+Encourage users to maintain consistent activity levels.  
 Address fluctuations observed in activity levels over time.
-Reduce Sedentary Time:
 
-Implement strategies to reduce prolonged sedentary periods.
+**Reduce Sedentary Time:**  
+Implement strategies to reduce prolonged sedentary periods.  
 Focus on users who take moderate steps but have high sedentary minutes.
-Encourage Moderate Activity:
 
-Shift the step distribution towards a higher average.
+**Encourage Moderate Activity:**  
+Shift the step distribution towards a higher average.  
 Set achievable daily step goals and provide incentives.
-Plan Implementation
-User Interface Enhancements:
 
-Simplify goal setting and tracking within the app.
+### Plan Implementation
+**User Interface Enhancements:**  
+Simplify goal setting and tracking within the app.  
 Provide real-time feedback on activity progress.
-Data-Driven Insights:
 
-Generate weekly and monthly activity reports.
+**Data-Driven Insights:**  
+Generate weekly and monthly activity reports.  
 Develop customizable alerts for users to remind them to stay active.
-Community and Support:
 
-Encourage users to join groups or challenges.
+**Community and Support:**  
+Encourage users to join groups or challenges.  
 Offer access to fitness experts for personalized advice.
-Deliverables
-Enhanced App Features:
 
-Goal-setting and tracking enhancements.
-Real-time activity alerts.
+### Deliverables
+**Enhanced App Features:**  
+Goal-setting and tracking enhancements.  
+Real-time activity alerts.  
 Detailed activity reports.
-User Education:
 
-Guides on effective activity logging.
+**User Education:**  
+Guides on effective activity logging.  
 Nutritional advice linked with caloric expenditure.
-Community Engagement:
 
-Launch community challenges and group activities.
+**Community Engagement:**  
+Launch community challenges and group activities.  
 Provide expert consultations.
-Next Steps
-Data Validation:
 
-Ensure accuracy and completeness of activity data.
+### Next Steps
+**Data Validation:**  
+Ensure accuracy and completeness of activity data.  
 Address any discrepancies or gaps in the data.
-User Feedback:
 
-Gather feedback on current app features and desired improvements.
+**User Feedback:**  
+Gather feedback on current app features and desired improvements.  
 Conduct surveys or focus groups to understand user needs.
-Feature Development:
 
-Prioritize development based on user feedback and data analysis.
+**Feature Development:**  
+Prioritize development based on user feedback and data analysis.  
 Test new features with a beta group before a full rollout.
 
-Final Conclusion
+### Final Conclusion
 The analysis of Fitbit data and visualizations reveals that while users are moderately active, there is significant room for improvement in their very active minutes and overall activity levels. By implementing enhanced goal-setting features, personalized recommendations, and fostering community engagement, Bellabeat can help users achieve better health outcomes. Continuous monitoring and feedback will ensure these initiatives are effective and well-received by users.
 
-
-License
+### License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Acknowledgments
-I would like to thank Bellabeat for providing the opportunity to work on this case study, as well as the Kaggle community for the publicly available FitBit dataset used in this analysis.
-
-
+### Acknowledgments
+I would like to express my gratitude to Bellabeat for providing the opportunity to work on this case study. Additionally, I am thankful to the Kaggle community for making the FitBit dataset publicly available, which was instrumental in this analysis. Furthermore, special thanks are owed to the respondents who participated in the survey via Amazon Mechanical Turk between 03.12.2016-05.12.2016, as their contributions formed the basis of the dataset used in this study.
 
